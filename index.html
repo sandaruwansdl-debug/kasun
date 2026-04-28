@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kasun Liyadipita Photography | Wildlife, Nature & Portraits</title>
+  <meta name="description" content="Kasun Liyadipita captures Sri Lanka’s wildlife, nature, landscapes and portraits through cinematic, story-led photography." />
+  <meta property="og:title" content="Kasun Liyadipita Photography" />
+  <meta property="og:description" content="Wildlife, nature, landscape and portrait photography from Sri Lanka." />
+  <meta property="og:image" content="https://kasunliyadipita.com/wp-content/uploads/2026/02/KLP_1022-9-1024x1024.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#080806;
+      --bg2:#11100c;
+      --card:#171511;
+      --muted:#b7b0a4;
+      --text:#fffaf0;
+      --gold:#d8a853;
+      --gold2:#f2d492;
+      --line:rgba(255,250,240,.13);
+      --green:#31472e;
+      --shadow:0 30px 90px rgba(0,0,0,.45);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6;overflow-x:hidden}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .noise{position:fixed;inset:0;pointer-events:none;opacity:.11;z-index:99;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+    .wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:50;background:linear-gradient(to bottom,rgba(8,8,6,.92),rgba(8,8,6,.55),transparent);backdrop-filter:blur(10px)}
+    .nav-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
+    .brand img{width:44px;height:44px;border-radius:14px;border:1px solid var(--line);background:#050505;padding:5px}
+    .brand-short{display:none}
+    .links{display:flex;align-items:center;gap:26px;color:rgba(255,250,240,.78);font-size:13px;font-weight:600}
+    .links a:hover{color:var(--gold2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 18px;border-radius:999px;border:1px solid rgba(216,168,83,.45);background:linear-gradient(135deg,rgba(216,168,83,.22),rgba(216,168,83,.06));color:var(--gold2);font-weight:800;font-size:13px;letter-spacing:.02em;box-shadow:0 18px 50px rgba(216,168,83,.10);transition:.25s ease}
+    .btn:hover{transform:translateY(-2px);border-color:rgba(242,212,146,.85);background:rgba(216,168,83,.24)}
+    .btn.dark{background:rgba(255,255,255,.06);border-color:var(--line);color:var(--text);box-shadow:none}
+    .hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 0 70px;isolation:isolate}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,8,6,.95) 0%,rgba(8,8,6,.76) 43%,rgba(8,8,6,.25) 75%,rgba(8,8,6,.72) 100%),url('https://kasunliyadipita.com/wp-content/uploads/2026/02/KLP_6400-4-1024x1024.jpg') center/cover no-repeat;z-index:-2;filter:saturate(.95) contrast(1.05)}
+    .hero:after{content:"";position:absolute;inset:auto 0 0 0;height:32%;background:linear-gradient(to bottom,transparent,var(--bg));z-index:-1}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:end;gap:60px}
+    .eyebrow{display:inline-flex;gap:10px;align-items:center;color:var(--gold2);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.18em;margin-bottom:20px}
+    .eyebrow:before{content:"";width:42px;height:1px;background:var(--gold)}
+    h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.02;margin:0;color:#fff7e7}
+    h1{font-size:clamp(50px,8vw,108px);letter-spacing:-.06em;max-width:900px}
+    .hero p{font-size:clamp(17px,2vw,21px);color:rgba(255,250,240,.78);max-width:670px;margin:26px 0 34px}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+    .hero-card{justify-self:end;width:min(420px,100%);background:rgba(18,17,13,.72);border:1px solid var(--line);border-radius:32px;padding:18px;box-shadow:var(--shadow);backdrop-filter:blur(14px)}
+    .hero-card img{height:410px;width:100%;object-fit:cover;border-radius:24px;filter:saturate(.9)}
+    .hero-meta{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px}
+    .metric{border:1px solid var(--line);border-radius:18px;padding:13px;background:rgba(255,255,255,.04)}
+    .metric strong{display:block;font-size:20px;color:var(--gold2)}
+    .metric span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    section{padding:96px 0}
+    .section-head{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:end;margin-bottom:42px}
+    h2{font-size:clamp(36px,5vw,64px);letter-spacing:-.04em}
+    .lead{font-size:18px;color:var(--muted);max-width:700px;margin:0}
+    .about{background:linear-gradient(180deg,var(--bg),var(--bg2))}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
+    .portrait{position:relative;border-radius:36px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+    .portrait img{height:560px;width:100%;object-fit:cover}
+    .portrait:after{content:"Field Photographer";position:absolute;left:22px;bottom:22px;padding:10px 14px;border-radius:999px;background:rgba(8,8,6,.72);border:1px solid var(--line);font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gold2);backdrop-filter:blur(10px)}
+    .copy-card{padding:46px;border:1px solid var(--line);border-radius:36px;background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.02));box-shadow:var(--shadow)}
+    .copy-card p{color:rgba(255,250,240,.76);font-size:17px;margin:18px 0 0}
+    .pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+    .pill{border:1px solid rgba(216,168,83,.3);background:rgba(216,168,83,.08);color:var(--gold2);padding:9px 13px;border-radius:999px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+    .gallery{background:radial-gradient(circle at 20% 0%,rgba(49,71,46,.55),transparent 34%),var(--bg)}
+    .masonry{columns:3 280px;column-gap:18px}
+    .shot{break-inside:avoid;margin:0 0 18px;border-radius:28px;overflow:hidden;position:relative;border:1px solid var(--line);background:#111;box-shadow:0 20px 50px rgba(0,0,0,.28)}
+    .shot img{width:100%;height:auto;transition:transform .7s ease,filter .7s ease;filter:saturate(.9) contrast(1.02)}
+    .shot:hover img{transform:scale(1.055);filter:saturate(1.05) contrast(1.08)}
+    .shot figcaption{position:absolute;inset:auto 12px 12px 12px;padding:14px;border-radius:18px;background:linear-gradient(to top,rgba(0,0,0,.78),rgba(0,0,0,.34));border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(8px);font-weight:800;font-size:13px;opacity:0;transform:translateY(8px);transition:.25s ease}
+    .shot:hover figcaption{opacity:1;transform:translateY(0)}
+    .services{background:linear-gradient(180deg,var(--bg),#0d0f0b)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.025));padding:30px;min-height:290px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s ease}
+    .card:hover{transform:translateY(-6px);border-color:rgba(216,168,83,.45)}
+    .icon{width:48px;height:48px;border-radius:18px;background:rgba(216,168,83,.14);border:1px solid rgba(216,168,83,.24);display:grid;place-items:center;color:var(--gold2);font-size:24px;margin-bottom:24px}
+    .card h3{font-size:30px;margin-bottom:13px}
+    .card p{color:var(--muted);margin:0}
+    .price{margin-top:26px;color:var(--gold2);font-weight:900;letter-spacing:.03em}
+    .featured{background:linear-gradient(135deg,rgba(49,71,46,.58),rgba(216,168,83,.08));border-color:rgba(216,168,83,.35)}
+
+    .prints{background:radial-gradient(circle at 85% 10%,rgba(216,168,83,.18),transparent 30%),linear-gradient(180deg,#0d0f0b,var(--bg))}
+    .print-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .print-card{border:1px solid var(--line);border-radius:32px;overflow:hidden;background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.02));box-shadow:0 24px 70px rgba(0,0,0,.34);transition:.25s ease}
+    .print-card:hover{transform:translateY(-6px);border-color:rgba(216,168,83,.45)}
+    .print-img{height:310px;position:relative;overflow:hidden;background:#111}
+    .print-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.92) contrast(1.04);transition:transform .7s ease}
+    .print-card:hover .print-img img{transform:scale(1.055)}
+    .print-badge{position:absolute;left:16px;top:16px;border:1px solid rgba(242,212,146,.35);background:rgba(8,8,6,.72);color:var(--gold2);backdrop-filter:blur(10px);border-radius:999px;padding:8px 12px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.1em}
+    .print-body{padding:24px}
+    .print-body h3{font-size:29px;margin-bottom:9px}
+    .print-body p{margin:0;color:var(--muted);font-size:15px}
+    .print-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
+    .print-meta div{border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:16px;padding:11px 12px}
+    .print-meta span{display:block;color:rgba(255,250,240,.56);font-size:11px;text-transform:uppercase;letter-spacing:.09em;font-weight:800}
+    .print-meta strong{display:block;color:var(--gold2);font-size:15px;margin-top:3px}
+    .shop-note{margin-top:24px;border:1px solid rgba(216,168,83,.28);border-radius:24px;padding:20px;background:rgba(216,168,83,.07);color:rgba(255,250,240,.72)}
+
+    .portfolio-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .work{position:relative;border-radius:32px;overflow:hidden;min-height:420px;border:1px solid var(--line);box-shadow:var(--shadow)}
+    .work img{height:100%;width:100%;object-fit:cover;position:absolute;inset:0;filter:saturate(.92)}
+    .work:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.88),rgba(0,0,0,.08) 60%)}
+    .work-info{position:absolute;left:24px;right:24px;bottom:24px;z-index:2}
+    .work-info span{color:var(--gold2);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em}
+    .work-info h3{font-size:34px;margin-top:8px}
+    .testimonials{background:radial-gradient(circle at 75% 10%,rgba(216,168,83,.14),transparent 28%),var(--bg2)}
+    .quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    blockquote{margin:0;padding:30px;border-radius:30px;border:1px solid var(--line);background:rgba(255,255,255,.045);color:rgba(255,250,240,.76)}
+    blockquote p{font-size:17px;margin:0 0 24px}
+    cite{font-style:normal;font-weight:900;color:var(--text)}
+    cite span{display:block;color:var(--muted);font-weight:500;font-size:13px;margin-top:4px}
+    .contact{position:relative;background:linear-gradient(90deg,rgba(8,8,6,.94),rgba(8,8,6,.80)),url('https://kasunliyadipita.com/wp-content/uploads/2026/02/KLP_0446-2-1024x1024.jpg') center/cover fixed no-repeat}
+    .contact-box{display:grid;grid-template-columns:1fr .9fr;gap:28px;align-items:stretch}
+    .contact-panel{padding:46px;border-radius:36px;border:1px solid rgba(255,255,255,.16);background:rgba(8,8,6,.72);backdrop-filter:blur(14px);box-shadow:var(--shadow)}
+    .contact-panel p{color:var(--muted);font-size:18px;max-width:630px}
+    form{display:grid;gap:13px}
+    input,textarea{width:100%;border:1px solid var(--line);background:rgba(255,255,255,.065);border-radius:18px;padding:15px 16px;color:var(--text);font:inherit;outline:none}
+    input:focus,textarea:focus{border-color:rgba(216,168,83,.7)}
+    textarea{min-height:130px;resize:vertical}
+    footer{padding:34px 0;border-top:1px solid var(--line);background:#060605;color:rgba(255,250,240,.6)}
+    .foot{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap;font-size:13px}
+    .social{display:flex;gap:14px;color:var(--gold2);font-weight:800}
+    .reveal{opacity:0;transform:translateY(26px);transition:.75s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    @media (max-width:900px){
+      .links{display:none}.hero-grid,.section-head,.about-grid,.contact-box{grid-template-columns:1fr}.hero-card{justify-self:start}.cards,.print-grid,.portfolio-strip,.quote-grid{grid-template-columns:1fr}.work{min-height:360px}.portrait img{height:440px}section{padding:72px 0}.nav-inner{height:72px}.hero{padding-top:105px}.hero-meta{grid-template-columns:1fr 1fr 1fr}.copy-card,.contact-panel{padding:28px}.wrap{width:min(100% - 28px,1180px)}
+    }
+    @media (max-width:560px){h1{font-size:48px}.hero p{font-size:16px}.hero-card img{height:330px}.metric strong{font-size:16px}.metric{padding:10px}.hero-meta{gap:7px}.btn{width:100%}.brand .brand-full{display:none}.brand .brand-short{display:inline;font-size:18px;letter-spacing:.16em}.masonry{columns:1}.contact{background-attachment:scroll}}
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/ext-custom-logo-1771950290196.webp" alt="Kasun Liyadipita Photography logo"><span class="brand-full">Kasun Liyadipita<br>Photography</span><span class="brand-short">KS</span></a>
+      <div class="links"><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#services">Services</a><a href="#prints">Prints</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></div>
+      <a class="btn" href="#contact">Book a Session</a>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <div class="eyebrow">Wildlife • Nature • Portraits</div>
+        <h1>Stories from the wild, framed with patience.</h1>
+        <p>Kasun Liyadipita captures the raw beauty of Sri Lanka’s natural world through wildlife, landscape and portrait photography built around emotion, detail and timing.</p>
+        <div class="hero-actions"><a class="btn" href="#gallery">View Portfolio</a><a class="btn dark" href="#services">Explore Services</a></div>
+      </div>
+      <div class="hero-card reveal">
+        <img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/Leopard-Portrait-1024x1024.jpg" alt="Leopard portrait by Kasun Liyadipita">
+        <div class="hero-meta">
+          <div class="metric"><strong>Wildlife</strong><span>Focus</span></div>
+          <div class="metric"><strong>Sri Lanka</strong><span>Base</span></div>
+          <div class="metric"><strong>Fine Art</strong><span>Style</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <div class="wrap about-grid">
+      <div class="portrait reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/Kasun-Liyadi-01-1024x1024.jpg" alt="Kasun Liyadipita holding a telephoto lens"></div>
+      <div class="copy-card reveal">
+        <div class="eyebrow">Behind the Lens</div>
+        <h2>Quiet moments. Strong stories.</h2>
+        <p>Kasun is a dedicated photographer capturing Sri Lanka’s wildlife and nature, blending technical skill with artistic vision to tell powerful visual stories.</p>
+        <p>From mist-covered mountains to rare encounters in the wild, his work is built on patience, respect for the environment and a sharp eye for natural light.</p>
+        <div class="pill-row"><span class="pill">Wildlife</span><span class="pill">Nature</span><span class="pill">Portraits</span><span class="pill">Landscapes</span><span class="pill">Fine Art Prints</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Wildlife chronicles</h2><p class="lead">A cinematic gallery of animals, landscapes, light and atmosphere — designed to make the photography feel premium, editorial and immersive.</p></div>
+      <div class="masonry">
+        <figure class="shot reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/KLP_1022-9-1024x1024.jpg" alt="Leopard walking through forest"><figcaption>Leopard on the move</figcaption></figure>
+        <figure class="shot reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/519A2940-2-1024x1024.jpg" alt="Owl close-up"><figcaption>Curious gaze</figcaption></figure>
+        <figure class="shot reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/KLP_0417-2-4-1024x1024.jpg" alt="Bird silhouettes at sunset"><figcaption>Sunset silhouettes</figcaption></figure>
+        <figure class="shot reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/519A5374-1024x1024.jpg" alt="Bear in forest"><figcaption>Hidden in green</figcaption></figure>
+        <figure class="shot reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/KLP_0446-2-1024x1024.jpg" alt="Hornbills in forest"><figcaption>Into the canopy</figcaption></figure>
+        <figure class="shot reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/KLP_4753-1024x1024.jpg" alt="Small bird on branch"><figcaption>Small life, big detail</figcaption></figure>
+        <figure class="shot reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/Sambar-Deer-1-1024x1024.jpg" alt="Sambar deer in mist"><figcaption>Morning mist</figcaption></figure>
+        <figure class="shot reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/DSC_0264-1024x1024.jpg" alt="Misty mountain landscape"><figcaption>Misty mountains</figcaption></figure>
+        <figure class="shot reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/KLP_6400-4-1024x1024.jpg" alt="Elephant family"><figcaption>Gentle giants</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Services & print collections</h2><p class="lead">A cleaner way to present photography services, print sales and commissioned work without making the page feel like a basic template.</p></div>
+      <div class="cards">
+        <article class="card reveal"><div><div class="icon">◈</div><h3>Wildlife Prints</h3><p>Curated fine-art wildlife images for homes, offices, hotels and collectors.</p></div><div class="price">From $150</div></article>
+        <article class="card featured reveal"><div><div class="icon">◎</div><h3>Nature Stories</h3><p>Editorial-style nature and landscape collections from Sri Lanka’s forests, mountains and wild spaces.</p></div><div class="price">From $200</div></article>
+        <article class="card reveal"><div><div class="icon">✦</div><h3>Portrait Sessions</h3><p>Clean, atmospheric portraits for personal brands, creators and professionals.</p></div><div class="price">From $180</div></article>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="prints" class="prints">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Printed frames for sale</h2><p class="lead">Select a wildlife print, choose the frame size, and send the order directly on WhatsApp. A dedicated shop page can be added later; for now, this works as a clean WhatsApp add-to-cart flow.</p></div>
+      <div class="print-grid">
+        <article class="print-card reveal">
+          <div class="print-img"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/KLP_6400-4-1024x1024.jpg" alt="Elephant family framed wildlife print"><span class="print-badge">Limited Print</span></div>
+          <div class="print-body">
+            <h3>Gentle Giants</h3>
+            <p>Fine-art elephant family print, ideal for homes, hotels, offices and nature-inspired interiors.</p>
+            <div class="print-meta"><div><span>Frame Size</span><strong>12×18 / 16×24</strong></div><div><span>Finish</span><strong>Framed Print</strong></div></div>
+            <a class="btn" target="_blank" rel="noopener" href="https://wa.me/94772488500?text=Hi%20Kasun%2C%20I%20would%20like%20to%20order%20the%20Gentle%20Giants%20printed%20frame.%20Frame%20size%3A%2012x18%20or%2016x24.%20Please%20share%20price%20and%20availability.">Add to Cart on WhatsApp</a>
+          </div>
+        </article>
+        <article class="print-card reveal">
+          <div class="print-img"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/Leopard-Portrait-1024x1024.jpg" alt="Leopard portrait framed wildlife print"><span class="print-badge">Best Seller</span></div>
+          <div class="print-body">
+            <h3>Leopard Portrait</h3>
+            <p>A bold wildlife statement piece with strong contrast, detail and premium gallery feel.</p>
+            <div class="print-meta"><div><span>Frame Size</span><strong>12×18 / 16×24</strong></div><div><span>Finish</span><strong>Framed Print</strong></div></div>
+            <a class="btn" target="_blank" rel="noopener" href="https://wa.me/94772488500?text=Hi%20Kasun%2C%20I%20would%20like%20to%20order%20the%20Leopard%20Portrait%20printed%20frame.%20Frame%20size%3A%2012x18%20or%2016x24.%20Please%20share%20price%20and%20availability.">Add to Cart on WhatsApp</a>
+          </div>
+        </article>
+        <article class="print-card reveal">
+          <div class="print-img"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/Sambar-Deer-1-1024x1024.jpg" alt="Sambar deer framed wildlife print"><span class="print-badge">Fine Art</span></div>
+          <div class="print-body">
+            <h3>Morning Mist</h3>
+            <p>Soft, atmospheric wildlife artwork with a calm luxury feel for interior spaces.</p>
+            <div class="print-meta"><div><span>Frame Size</span><strong>12×18 / 16×24</strong></div><div><span>Finish</span><strong>Framed Print</strong></div></div>
+            <a class="btn" target="_blank" rel="noopener" href="https://wa.me/94772488500?text=Hi%20Kasun%2C%20I%20would%20like%20to%20order%20the%20Morning%20Mist%20printed%20frame.%20Frame%20size%3A%2012x18%20or%2016x24.%20Please%20share%20price%20and%20availability.">Add to Cart on WhatsApp</a>
+          </div>
+        </article>
+      </div>
+      <div class="shop-note reveal"><strong>WhatsApp orders:</strong> Each button opens a pre-filled message to <strong>+94 77 248 8500</strong> with the selected print name and frame size. Later, this section can be expanded into a full shop page with product details, prices, variants and checkout.</div>
+    </div>
+  </section>
+
+
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Featured portfolio</h2><p class="lead">A premium portfolio section with stronger image hierarchy, clear categories and editorial titles.</p></div>
+      <div class="portfolio-strip">
+        <article class="work reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/Sambar-Deer-1-1024x1024.jpg" alt="Sambar Deer"><div class="work-info"><span>Wildlife Photography</span><h3>Amazing Horton Plains</h3></div></article>
+        <article class="work reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/DSC_0264-1024x1024.jpg" alt="Misty mountains"><div class="work-info"><span>Nature Photography</span><h3>Misty Mountains</h3></div></article>
+        <article class="work reveal"><img src="https://kasunliyadipita.com/wp-content/uploads/2026/02/Kasun-Liyadi-01-1024x1024.jpg" alt="Photographer portrait"><div class="work-info"><span>Portrait Photography</span><h3>Portrait Essence</h3></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Client reflections</h2><p class="lead">Simple, premium social proof that feels more suitable for a professional photography brand.</p></div>
+      <div class="quote-grid">
+        <blockquote class="reveal"><p>“Kasun’s ability to reveal nature’s true spirit transformed my view of wildlife photography.”</p><cite>Anjali Perera<span>Conservation Advocate</span></cite></blockquote>
+        <blockquote class="reveal"><p>“Every shot reflects Kasun’s dedication and artistic vision, making each image feel like a masterpiece.”</p><cite>Ruwan Silva<span>Travel Magazine Editor</span></cite></blockquote>
+        <blockquote class="reveal"><p>“The portraits and landscapes exceeded expectations, bringing every moment to life.”</p><cite>Nadeesha Fernando<span>Environmental Researcher</span></cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap contact-box">
+      <div class="contact-panel reveal"><div class="eyebrow">Start a project</div><h2>Let’s create images with depth.</h2><p>Use this section to connect inquiries for print purchases, photography sessions, collaborations, exhibitions or editorial projects.</p><div class="hero-actions"><a class="btn" href="https://wa.me/94772488500?text=Hi%20Kasun%2C%20I%20would%20like%20to%20inquire%20about%20photography%20or%20printed%20frames." target="_blank" rel="noopener">WhatsApp Kasun</a><a class="btn dark" href="https://kasunliyadipita.com/" target="_blank" rel="noopener">Original Website</a></div></div>
+      <form class="contact-panel reveal" onsubmit="event.preventDefault(); alert('This demo form is ready to connect to your email or backend.');">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Tell me about the project" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot"><div>© <span id="year"></span> Kasun Liyadipita Photography. Premium HTML concept.</div><div class="social"><a href="https://www.instagram.com/" target="_blank">Instagram</a><a href="https://www.facebook.com/" target="_blank">Facebook</a><a href="https://www.youtube.com/" target="_blank">YouTube</a></div></div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+    }, {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
